@@ -1,0 +1,36 @@
+瓦片地图下载程序
+
+JiChuanbo@2020/05
+    
+    注意：
+
+    此下载工具用于抓取Google地图瓦片，原图片版权归Google所有！
+
+    使用该工具需具备Python环境，并务必根据需要修改config.ini配置文件！
+
+文件说明
+- start.bat为启动命令程序
+- config.ini为下载配置文件
+- getMap.py为下载进程python程序
+
+使用说明
+
+Python环境支持
+ - 使用此工具需计算机具备Python3环境，python官网 https://www.python.org/ 提供支持
+
+使用步骤
+ 1、根据需要修改配置文件config.ini
+    
+        [dir]
+        rootDir = C:\\googleMap\\ # 保存路径，格式务必正确，文件夹会自动创建
+        [map]
+        ifRoad = 0 # 下载类型，0为卫星影像，1(或其它值)为道路地图
+        [layer]
+        zoom = 8 # 下载层级
+        single = 0 # 单级或多级，0为多级(0-zoom)，1(或其它值)为仅一级(zoom)
+        leftLon = 80 # 下载范围左上角经度
+        leftLat = 23 # 下载范围左上角纬度
+        rightLon = 120 # 下载范围右下角经度
+        rightLat = 40 # 下载范围右下角纬度
+
+ 2、双击运行start.bat
